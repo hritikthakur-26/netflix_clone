@@ -1,26 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
 
 * {
-    padding:0;
+    padding: 0;
     margin: 0;
 }
 
 body {
     background-color: black;
 }
+
 .main {
     background-image: url(https://wallpapers.com/images/high/netflix-and-chill-66a0zl8dlfkdhcwl.webp);
     height: 80vh;
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: max(1200px,100vw);
+    background-size: max(1200px, 100vw);
     position: relative;
 }
 
 .main .box {
     height: 70vh;
     width: 100%;
-    opacity: 0.44;
+    opacity: 0.7;
     background-color: black;
     position: absolute;
     top: 0;
@@ -44,33 +45,83 @@ nav image {
 }
 
 nav button {
-     position: relative;
+    position: relative;
     z-index: 10;
 }
 
 .hero {
-     font-family: "Martel Sans", sans-serif;
-    height: 100%;
+    font-family: "Martel Sans", sans-serif;
+    height: calc(100% - 62px);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     color: white;
     position: relative;
-    gap: 23px;
+    gap: 30px;
+    padding: 0 30px;
 }
 
 .hero> :first-child {
-    font-weight: 900;
+    font-weight: bolder;
     font-size: 48px;
+    text-align: center;
+
 }
 
-.hero> :nth-child(2){
+.hero> :nth-child(2) {
     font-weight: 700;
     font-size: 24px;
+    text-align: center;
+
 }
 
-.hero> :nth-child(3){
+.hero> :nth-child(3) {
     font-weight: 400;
     font-size: 20px;
+    text-align: center;
+
 }
+
+.separation {
+    height: 7px;
+    background-color: rgb(63, 55, 55);
+}
+
+.btn {
+    padding: 3px 8px; 
+    font-weight: bold;
+    background-color: white;
+
+}
+
+.btn-red {
+background-color: red;
+color: white;
+padding: 3px 24px;
+font-size: 20px;
+border-radius:4px;
+}
+
+.main input {
+    padding:7px 101px 8px 14px;
+    font-size:12px;
+    font-weight: 900;
+    border-radius: 4px;
+    color:white;
+    background-color: rgba(23, 23, 23,0.7);
+    border:1px solid rgba(246, 238, 238, 0.5)
+}
+
+.btn-red-sm {
+background-color: red;
+color:white;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:16px;
+}
+
