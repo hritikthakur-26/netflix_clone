@@ -1,19 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
 * {
     padding:0;
     margin: 0;
 }
 
+body {
+    background-color: black;
+}
 .main {
     background-image: url(https://wallpapers.com/images/high/netflix-and-chill-66a0zl8dlfkdhcwl.webp);
     height: 80vh;
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: max(1000px,100vw);
+    background-size: max(1200px,100vw);
     position: relative;
 }
 
 .main .box {
-    height: 80vh;
+    height: 70vh;
     width: 100%;
     opacity: 0.44;
     background-color: black;
@@ -22,10 +27,50 @@
 }
 
 nav {
-    max-width: 80vw;
+    max-width: 60vw;
     display: flex;
     margin: auto;
     justify-content: space-between;
     align-items: center;
+    height: 60px;
 
+}
+
+nav image {
+    color: red;
+    width: 150px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+     position: relative;
+    z-index: 10;
+}
+
+.hero {
+     font-family: "Martel Sans", sans-serif;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    gap: 23px;
+}
+
+.hero> :first-child {
+    font-weight: 900;
+    font-size: 48px;
+}
+
+.hero> :nth-child(2){
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.hero> :nth-child(3){
+    font-weight: 400;
+    font-size: 20px;
 }
