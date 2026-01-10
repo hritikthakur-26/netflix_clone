@@ -188,10 +188,18 @@ nav button {
     font-size: 24px;
 
 }
+
+.faqbox svg {
+    filter:invert(1);
+}
+
 .faqbox:hover{
     background-color: rgb(37,36,36);
+    color: white;
 }
+
 .faqbox {
+    color:white;
     transition: all 1s ease-out;
     display:flex;
     justify-content: space-between;
@@ -201,4 +209,29 @@ nav button {
     margin: 34px auto;
     cursor:pointer;
 
+}
+
+footer{
+    color: white;
+
+}
+
+footer span {
+    margin:auto;
+    text-align: center;
+    max-width: 30vw;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    max-width: 60vw;
+    margin:auto;
 }
