@@ -179,14 +179,26 @@ nav button {
 .faq h2 {
     text-align: center;
     padding: 34px;
+    font-size: 48px;
 }
 
 .faq{
     background: black;
     color: white;
+    font-size: 24px;
+
+}
+.faqbox:hover{
+    background-color: rgb(37,36,36);
 }
 .faqbox {
+    transition: all 1s ease-out;
     display:flex;
-    background-color: gray;
-    padding: 34px;
+    justify-content: space-between;
+    background-color: #2d2d2d;
+    padding: 24px;
+    max-width: 60vw;
+    margin: 34px auto;
+    cursor:pointer;
+
 }
