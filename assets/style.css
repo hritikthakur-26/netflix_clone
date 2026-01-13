@@ -33,22 +33,22 @@ nav {
     margin: auto;
     justify-content: space-between;
     align-items: center;
-    height: 60px;
+    height: 100px;
 
 }
 
 nav image {
-    color: red;
-    width: 150px;
+     color: red;
+    width: 130px;
     position: relative;
     z-index: 10;
+
 }
 
 nav button {
     position: relative;
     z-index: 10;
 }
-
 .hero {
     font-family: "Martel Sans", sans-serif;
     height: calc(100% - 62px);
@@ -58,7 +58,7 @@ nav button {
     flex-direction: column;
     color: white;
     position: relative;
-    gap: 30px;
+    gap: 23px;
     padding: 0 30px;
 }
 
@@ -142,13 +142,28 @@ nav button {
     align-items: center;
 }
 
+@media screen and ({max-width: 1300px){
+.first {
+    flex-wrap: wrap;
+}
+.secImg img {
+    width: 305px;
+   
+}
+.secImg video {
+   
+    width:305px;
+}
+}
+    
+
 .secImg {
     position: relative;
 
 }
 
 .secImg img {
-    width: 30vw;
+    width: 555px;
     position: relative;
     z-index: 10;
 
@@ -161,8 +176,8 @@ nav button {
 }
 
 .first>div {
-   display: flex;
-   flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .first>div :first-child {
@@ -172,7 +187,7 @@ nav button {
 
 .first>div :nth-child(2) {
     font-size: 24px;
-   
+
 }
 
 
@@ -182,7 +197,7 @@ nav button {
     font-size: 48px;
 }
 
-.faq{
+.faq {
     background: black;
     color: white;
     font-size: 24px;
@@ -190,48 +205,65 @@ nav button {
 }
 
 .faqbox svg {
-    filter:invert(1);
+    filter: invert(1);
 }
 
-.faqbox:hover{
-    background-color: rgb(37,36,36);
+.faqbox:hover {
+    background-color: rgb(37, 36, 36);
     color: white;
 }
 
 .faqbox {
-    color:white;
+    color: white;
     transition: all 1s ease-out;
-    display:flex;
+    display: flex;
     justify-content: space-between;
     background-color: #2d2d2d;
     padding: 24px;
     max-width: 60vw;
     margin: 34px auto;
-    cursor:pointer;
+    cursor: pointer;
 
 }
 
-footer{
+footer {
     color: white;
-
-}
-
-footer span {
-    margin:auto;
-    text-align: center;
+    margin: auto;
     max-width: 30vw;
+    padding:14px;
+}
+footer .questions {
+    padding:34px;
 }
 
-.footer{
+.footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     color: white;
 }
+
+@media screen and ({max-width: 1300px){
+.first {
+    flex-wrap: wrap;
+}
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+}
+}
+
+.footer a {
+    font-size: 14px;
+    color:white; 
+}
+
+
 
 .footer-item {
     display: flex;
     flex-direction: column;
     color: white;
     max-width: 60vw;
-    margin:auto;
+    margin: auto;
+    gap:23px;
 }
